@@ -32,13 +32,13 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && !dashing && !dashed)
         {
-            rb.velocity = new Vector3(input.y, 0, -input.x) * (speed * 2.5f) * Time.deltaTime;
+            rb.velocity = new Vector3(input.y, 0, -input.x).normalized * (speed * 2.5f) * Time.deltaTime;
             dashing = true;
         }
 
         Dash();
         if(!dashing)
-        rb.velocity = new Vector3(input.y, 0, -input.x) * speed * Time.deltaTime;
+        rb.velocity = new Vector3(input.y, 0, -input.x).normalized * speed * Time.deltaTime;
 
         if(rb.velocity.magnitude != 0)
         transform.forward = rb.velocity;
