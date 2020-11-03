@@ -21,13 +21,14 @@ public class PickUp : MonoBehaviour
             if(pickedup==false)
             {
                 GameObject.Find("Stick").transform.SetParent(this.gameObject.transform);
+
                 Debug.Log("WOWZERS");
                 pickedup = true;
             }
             else if(pickedup==true)
             {
                 GameObject.Find("Stick").transform.SetParent(null);
-                Debug.Log("YABADU");
+                Debug.Log("SKRRT");
                 pickedup = false;
             }
 
