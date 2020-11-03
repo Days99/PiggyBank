@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6166733074700470262
+--- !u!1 &5748429403655647583
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,61 +8,100 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7192242935180195301}
-  - component: {fileID: 2789221414533961315}
-  - component: {fileID: 2789221414533961313}
-  m_Layer: 0
-  m_Name: PiggyBank
+  - component: {fileID: 8763406529594966860}
+  - component: {fileID: 4388594010551689418}
+  - component: {fileID: 4388594010551689416}
+  - component: {fileID: 1896619182753819423}
+  - component: {fileID: 1896619182753819418}
+  m_Layer: 8
+  m_Name: PiggyBank 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7192242935180195301
+--- !u!4 &8763406529594966860
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166733074700470262}
+  m_GameObject: {fileID: 5748429403655647583}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4193506, y: -1.7942307e-16, z: 8.080496}
+  m_LocalPosition: {x: 14.4, y: 0.5, z: -4.3}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
-  - {fileID: 4072482401973665752}
+  - {fileID: 2510326006515616113}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2789221414533961315
+--- !u!54 &4388594010551689418
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166733074700470262}
+  m_GameObject: {fileID: 5748429403655647583}
   serializedVersion: 2
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 3
+  m_Drag: 2
+  m_AngularDrag: 0.01
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!65 &2789221414533961313
+--- !u!65 &4388594010551689416
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166733074700470262}
+  m_GameObject: {fileID: 5748429403655647583}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 12.918662, z: 19.84473}
   m_Center: {x: 0, y: 6.573157, z: 2.756222}
---- !u!1 &7910740241927305486
+--- !u!195 &1896619182753819423
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5748429403655647583}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 6
+  m_Acceleration: 20
+  avoidancePriority: 50
+  m_AngularSpeed: 160
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1896619182753819418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5748429403655647583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52d559dab7a8f24888c8080dab89ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolWaiting: 0
+  totalWaitTime: 1
+  switchProbability: 0.2
+--- !u!1 &8618408985085890471
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,45 +109,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4072482401973665752}
-  - component: {fileID: 3448042735623037671}
-  - component: {fileID: 5358537187189614601}
-  m_Layer: 0
+  - component: {fileID: 2510326006515616113}
+  - component: {fileID: 3858403457296749646}
+  - component: {fileID: 5768966224915127968}
+  m_Layer: 8
   m_Name: Pig_01_Circle.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4072482401973665752
+--- !u!4 &2510326006515616113
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7910740241927305486}
+  m_GameObject: {fileID: 8618408985085890471}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7192242935180195301}
+  m_Father: {fileID: 8763406529594966860}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3448042735623037671
+--- !u!33 &3858403457296749646
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7910740241927305486}
+  m_GameObject: {fileID: 8618408985085890471}
   m_Mesh: {fileID: -166651595875356561, guid: 00117b4098f44284f99f17ae6d642b18, type: 3}
---- !u!23 &5358537187189614601
+--- !u!23 &5768966224915127968
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7910740241927305486}
+  m_GameObject: {fileID: 8618408985085890471}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
